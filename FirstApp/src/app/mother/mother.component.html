@@ -2,50 +2,42 @@
 <div class="container">
     <h1 style="text-align: center;">大甲媽股市預測</h1>
     <img src="https://0.share.photo.xuite.net/ilovedajia/101f76f/13521511/700893960_m.jpg" class="rounded mx-auto d-block" alt="...">
+    <br/>
     <form>
         <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputEmail4">投資標的</label>
-            <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
-          </div>
-          <div class="form-group col-md-6">
-            <label for="inputPassword4">Password</label>
-            <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
-          </div>
+            <div class="form-group col-md-6">
+            <label for="investment" >投資標的 :</label>
+                <input class="form-control" list="investmentlst"/>
+
+                <datalist id="investmentlst">
+                    <option value="幣圈">
+                    <option value="美股">
+                    <option value="台股">
+                    <option value="港股">
+                    <option value="歐洲">
+                </datalist>
+
+            </div>
+            <div class="col-md-6">
+                <label for="symbol" >交易代號 :</label>
+                <input class="form-control" name="symbols"/> 
+            </div>
+
+            <div class="col-6">
+                <label for="algorithm" class="form-label">選擇演算法 :</label>
+                    <input class="form-control" list="algorithmlst"/>
+
+                    <datalist id="algorithmlst">
+                        <option value="LSTM">
+                        <option value="RNN">
+                        <option value="XGBoost">
+                        <option value="CNN">
+                        <option value="VGG16">
+                    </datalist>
+                    
+            </div>
         </div>
-        <div class="form-group">
-          <label for="inputAddress">Address</label>
-          <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-        </div>
-        <div class="form-group">
-          <label for="inputAddress2">Address 2</label>
-          <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-        </div>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <label for="inputCity">City</label>
-            <input type="text" class="form-control" id="inputCity">
-          </div>
-          <div class="form-group col-md-4">
-            <label for="inputState">State</label>
-            <select id="inputState" class="form-control">
-              <option selected>Choose...</option>
-              <option>...</option>
-            </select>
-          </div>
-          <div class="form-group col-md-2">
-            <label for="inputZip">Zip</label>
-            <input type="text" class="form-control" id="inputZip">
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="form-check">
-            <input class="form-check-input" type="checkbox" id="gridCheck">
-            <label class="form-check-label" for="gridCheck">
-              Check me out
-            </label>
-          </div>
-        </div>
-        <button type="submit" class="btn btn-primary">Sign in</button>
-      </form>
+    </form>
+    <br>
+    <img src="https://www.rclaw.com.tw/images/law_story/anyone/110317/116-3.gif" class="rounded mx-auto d-block" alt="...">
 </div>
